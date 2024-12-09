@@ -5,3 +5,4 @@ npm-debug.log
 *.mp4
 package-lock.json
 .gitignore
+deploy/
