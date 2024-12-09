@@ -2,3 +2,6 @@ Dockerfile
 .dockerignore
 node_modules
 npm-debug.log
+*.mp4
+package-lock.json
+.gitignore

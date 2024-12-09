@@ -20,13 +20,12 @@ module.exports = {
             ffmpeg(localFile)
                 .setStartTime(sequence.startTime)
                 .setDuration(sequence.duration)
-                .on("error", () => {
+                .on("error", (err) => {
                     console.log(
-                        "Failed to create scene for timestamp: "
+                        "Failed to extract clip: "
                     );
-                    return reject(
-                        "Failed to create scene for timestamp: "
-                    );
+                    console.log(err);
+                    return reject(err);
                 })
                 .on("end", () => {
                     console.log('Successfuly extracted: ' + outputFile);
