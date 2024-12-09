@@ -2,8 +2,8 @@
 
 # Replace below variables (ex: gs://MYBUCKET/PATH)
 gcs_bucket="MYBUCKET"
-gcs_path="GCS PATH TO FILES"
-image="europe-west1-docker.pkg.dev/mickael-canal-genai-poc/cloud-run-source-deploy/testvideo"
+gcs_path="PATH"
+image="IMAGE_PATH"
 split_duration=1200
 root_directory=$(echo "$gcs_path" | cut -d '/' -f 2)
 

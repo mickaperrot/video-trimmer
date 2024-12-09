@@ -3,8 +3,6 @@ const path = require("path");
 const storageHelper = require("./helpers/storage.js");
 const ffmpegHelper = require("./helpers/ffmpeg.js");
 
-const fs = require("fs").promises;
-
 console.log('Bucket: ' + process.env.BUCKET_NAME);
 
 const main = async () => {

@@ -59,7 +59,6 @@ module.exports = {
         const [files] = await storage.bucket(bucketName).getFiles(options);
         let filenames = [];
         files.forEach(file => {
-            //console.log(file.name);
             filenames.push(file.name);
         });
 
